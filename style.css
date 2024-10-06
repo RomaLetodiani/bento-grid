@@ -160,7 +160,7 @@ img {
 
 /* #region Typography */
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   margin-bottom: 30px;
 }
 
@@ -170,15 +170,16 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-block: 10px;
 }
 
@@ -222,6 +223,10 @@ h6 {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
@@ -254,6 +259,10 @@ h6 {
 /* #region Gaps */
 .gap {
   gap: 35px;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 /* #endregion */
@@ -344,6 +353,10 @@ h6 {
 
 /* #region max-w */
 
+.max-w-unset {
+  max-width: unset;
+}
+
 .max-w-200 {
   max-width: 200px;
 }
@@ -358,6 +371,30 @@ h6 {
 
 /* #endregion */
 
+/* #region height and width */
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* #endregion */
+
+/* #region position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* #endregion */
+
 .rounded {
   border-radius: 10px;
   overflow: hidden;
@@ -365,7 +402,7 @@ h6 {
 
 /* Custom Stuff */
 main {
-  max-width: 1200px;
+  max-width: 1175px;
   display: flex;
   flex-direction: row-reverse;
   gap: 20px;
