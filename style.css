@@ -88,13 +88,6 @@ p {
   font-size: var(--font-size-body);
 }
 
-/* Responsive Design */
-@media (max-width: 375px) {
-  body {
-    padding: 10px;
-  }
-}
-
 /* Font-weight specific styles */
 .light-text {
   font-weight: 400;
@@ -104,7 +97,7 @@ p {
   font-weight: 500;
 }
 
-/* Highlight */
+/* Highlights */
 .highlight-yellow {
   color: var(--yellow-500);
 }
@@ -140,4 +133,18 @@ p {
 
 .white-bg {
   background-color: var(--white);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column dense; /* Reverses the grid order */
+  gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+  body {
+    padding: 10px;
+  }
 }
