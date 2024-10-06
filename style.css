@@ -114,6 +114,10 @@ img {
   color: var(--purple-500);
 }
 
+.highlight-white {
+  color: var(--white);
+}
+
 .rounded {
   border-radius: 10px;
   overflow: hidden;
@@ -142,6 +146,36 @@ img {
 
 .white-bg {
   background-color: var(--white);
+}
+
+/* Typography */
+h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #7a47ff;
+}
+
+h3,
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1rem;
+  color: #333;
+}
+
+h6 {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Flex */
