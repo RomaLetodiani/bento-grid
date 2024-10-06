@@ -116,6 +116,7 @@ img {
 
 .rounded {
   border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Backrounds */
@@ -179,6 +180,23 @@ img {
 
 .flex-1 {
   flex: 1;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-cols-1-2 {
+  grid-template-columns: 1fr 2fr;
 }
 
 /* Gaps */
