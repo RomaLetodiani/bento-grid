@@ -58,14 +58,21 @@
   font-style: italic;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Base Styles */
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-body);
   color: var(--black);
-  background-color: var(--white);
-  margin: 0;
-  padding: 0;
+  padding: 20px;
+
+  display: grid;
+  place-content: center;
 }
 
 h1,
@@ -81,35 +88,10 @@ p {
   font-size: var(--font-size-body);
 }
 
-/* Button */
-.button {
-  background-color: var(--purple-500);
-  color: var(--white);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: var(--purple-100);
-}
-
-/* Highlight */
-.highlight {
-  color: var(--yellow-500);
-}
-
 /* Responsive Design */
-@media (max-width: var(--mobile-width)) {
+@media (max-width: 375px) {
   body {
     padding: 10px;
-  }
-}
-
-@media (min-width: var(--desktop-width)) {
-  body {
-    padding: 20px;
   }
 }
 
@@ -120,4 +102,42 @@ p {
 
 .medium-text {
   font-weight: 500;
+}
+
+/* Highlight */
+.highlight-yellow {
+  color: var(--yellow-500);
+}
+
+.highlight-purple {
+  color: var(--purple-500);
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+/* Backrounds */
+.light-grey-bg {
+  background-color: #f5f5f5;
+}
+
+.light-yellow-bg {
+  background-color: var(--yellow-100);
+}
+
+.light-purple-bg {
+  background-color: var(--purple-100);
+}
+
+.yellow-bg {
+  background-color: var(--yellow-500);
+}
+
+.purple-bg {
+  background-color: var(--purple-500);
+}
+
+.white-bg {
+  background-color: var(--white);
 }
