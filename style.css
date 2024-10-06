@@ -72,7 +72,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-body);
   color: var(--black);
-  padding: 20px;
+  padding-block: 80px;
+  padding-inline: 20px;
   min-height: 100vh;
 
   display: grid;
@@ -159,16 +160,17 @@ img {
 
 /* #region Typography */
 h1 {
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 4rem;
+  margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h4 {
@@ -346,12 +348,12 @@ h6 {
   max-width: 200px;
 }
 
-.max-w-300 {
-  max-width: 300px;
+.max-w-250 {
+  max-width: 250px;
 }
 
-.max-w-320 {
-  max-width: 320px;
+.max-w-275 {
+  max-width: 275px;
 }
 
 /* #endregion */
@@ -363,6 +365,7 @@ h6 {
 
 /* Custom Stuff */
 main {
+  max-width: 1200px;
   display: flex;
   flex-direction: row-reverse;
   gap: 20px;
