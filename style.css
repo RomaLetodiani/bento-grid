@@ -129,11 +129,6 @@ img {
 
 /* #endregion */
 
-.rounded {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
 /* #region Backrounds */
 .light-grey-bg {
   background-color: #f5f5f5;
@@ -164,12 +159,12 @@ img {
 /* #region Typography */
 h1 {
   font-size: 4rem;
-  margin-bottom: 10px;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.8rem;
-  color: #7a47ff;
 }
 
 h3,
@@ -178,13 +173,12 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
-  color: #333;
+  font-size: 1.3rem;
+  margin-block: 10px;
 }
 
 h6 {
   font-size: 0.9rem;
-  color: #777;
 }
 
 .text-center {
@@ -254,17 +248,97 @@ h6 {
 
 /* #region Gaps */
 .gap {
-  gap: 30px;
+  gap: 35px;
 }
 
 /* #endregion */
 
-.max-w-250 {
-  max-width: 250px;
+/* #region Paddings */
+.px-1 {
+  padding-inline: 10px;
+}
+
+.px-2 {
+  padding-inline: 20px;
+}
+
+.px-3 {
+  padding-inline: 30px;
+}
+
+.px-4 {
+  padding-inline: 40px;
+}
+
+.px-5 {
+  padding-inline: 50px;
+}
+
+.px-6 {
+  padding-inline: 60px;
+}
+
+.px-7 {
+  padding-inline: 70px;
+}
+
+.px-8 {
+  padding-inline: 80px;
+}
+
+.py-1 {
+  padding-block: 10px;
+}
+
+.py-2 {
+  padding-block: 20px;
+}
+
+.py-3 {
+  padding-block: 30px;
+}
+
+.py-4 {
+  padding-block: 40px;
+}
+
+.py-5 {
+  padding-block: 50px;
+}
+
+.py-6 {
+  padding-block: 60px;
+}
+
+.py-7 {
+  padding-block: 70px;
+}
+
+.py-8 {
+  padding-block: 80px;
+}
+
+/* #endregion */
+
+/* #region max-w */
+
+.max-w-200 {
+  max-width: 200px;
 }
 
 .max-w-300 {
   max-width: 300px;
+}
+
+.max-w-320 {
+  max-width: 320px;
+}
+
+/* #endregion */
+
+.rounded {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Custom Stuff */
