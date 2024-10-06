@@ -1,0 +1,422 @@
+:root {
+  /* Colors */
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --font-family: "DMSans", sans-serif;
+  --font-size-body: 18px;
+
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+/* #region Fonts */
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/static/DMSans-Medium.ttf") format("truetype"),
+    url("./assets/fonts/static/DMSans-MediumItalic.ttf") format("truetype"),
+    url("./assets/fonts/static/DMSans-Regular.ttf") format("truetype"),
+    url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype"),
+    url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 400; /* Change as needed */
+  font-style: normal; /* or italic depending on the font */
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/static/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/static/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DMSansVariable";
+  src: url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSansVariable";
+  src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* #endregion */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #region Base Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--black);
+  padding-block: 80px;
+  padding-inline: 20px;
+  min-height: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  line-height: 1;
+}
+
+p {
+  font-size: var(--font-size-body);
+}
+
+/* #endregion */
+
+/* #region Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* #endregion */
+
+/* #region Font-weight specific styles */
+.light-text {
+  font-weight: 400;
+}
+
+.medium-text {
+  font-weight: 500;
+}
+
+/* #endregion */
+
+/* #region Highlights */
+.highlight-yellow {
+  color: var(--yellow-500);
+}
+
+.highlight-purple {
+  color: var(--purple-500);
+}
+
+.highlight-white {
+  color: var(--white);
+}
+
+/* #endregion */
+
+/* #region Backrounds */
+.light-grey-bg {
+  background-color: #f5f5f5;
+}
+
+.light-yellow-bg {
+  background-color: var(--yellow-100);
+}
+
+.light-purple-bg {
+  background-color: var(--purple-100);
+}
+
+.yellow-bg {
+  background-color: var(--yellow-500);
+}
+
+.purple-bg {
+  background-color: var(--purple-500);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+
+/* #endregion */
+
+/* #region Typography */
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-block: 10px;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region Flex */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* #endregion  */
+
+/* #region Grid */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-cols-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-cols-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* #endregion */
+
+/* #region Gaps */
+.gap {
+  gap: 35px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+/* #endregion */
+
+/* #region Paddings */
+
+.p-3 {
+  padding: 30px;
+}
+
+.px-1 {
+  padding-inline: 10px;
+}
+
+.px-2 {
+  padding-inline: 20px;
+}
+
+.px-3 {
+  padding-inline: 30px;
+}
+
+.px-4 {
+  padding-inline: 40px;
+}
+
+.px-5 {
+  padding-inline: 50px;
+}
+
+.px-6 {
+  padding-inline: 60px;
+}
+
+.px-7 {
+  padding-inline: 70px;
+}
+
+.px-8 {
+  padding-inline: 80px;
+}
+
+.py-1 {
+  padding-block: 10px;
+}
+
+.py-2 {
+  padding-block: 20px;
+}
+
+.py-3 {
+  padding-block: 30px;
+}
+
+.py-4 {
+  padding-block: 40px;
+}
+
+.py-5 {
+  padding-block: 50px;
+}
+
+.py-6 {
+  padding-block: 60px;
+}
+
+.py-7 {
+  padding-block: 70px;
+}
+
+.py-8 {
+  padding-block: 80px;
+}
+
+.pr-1 {
+  padding-inline-end: 10px;
+}
+
+.pr-4 {
+  padding-inline-end: 40px;
+}
+
+.pb-0 {
+  padding-block-end: 0;
+}
+
+/* #endregion */
+
+/* #region max-w */
+
+.max-w-unset {
+  max-width: unset;
+}
+
+.max-w-200 {
+  max-width: 200px;
+}
+
+.max-w-250 {
+  max-width: 250px;
+}
+
+.max-w-275 {
+  max-width: 275px;
+}
+
+/* #endregion */
+
+/* #region height and width */
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* #endregion */
+
+/* #region position */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* #endregion */
+
+.rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Custom Stuff */
+main {
+  max-width: 1175px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+/* #region Responsive Design */
+@media (max-width: 375px) {
+  body {
+    padding: 10px;
+  }
+}
+
+/* #endregion */
