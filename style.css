@@ -1,0 +1,123 @@
+:root {
+  /* Colors */
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --font-family: "DMSans", sans-serif;
+  --font-size-body: 18px;
+
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/static/DMSans-Medium.ttf") format("truetype"),
+    url("./assets/fonts/static/DMSans-MediumItalic.ttf") format("truetype"),
+    url("./assets/fonts/static/DMSans-Regular.ttf") format("truetype"),
+    url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype"),
+    url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 400; /* Change as needed */
+  font-style: normal; /* or italic depending on the font */
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/static/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/static/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* For Variable fonts */
+@font-face {
+  font-family: "DMSansVariable";
+  src: url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSansVariable";
+  src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--black);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+}
+
+p {
+  font-size: var(--font-size-body);
+}
+
+/* Button */
+.button {
+  background-color: var(--purple-500);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--purple-100);
+}
+
+/* Highlight */
+.highlight {
+  color: var(--yellow-500);
+}
+
+/* Responsive Design */
+@media (max-width: var(--mobile-width)) {
+  body {
+    padding: 10px;
+  }
+}
+
+@media (min-width: var(--desktop-width)) {
+  body {
+    padding: 20px;
+  }
+}
+
+/* Font-weight specific styles */
+.light-text {
+  font-weight: 400;
+}
+
+.medium-text {
+  font-weight: 500;
+}
