@@ -4,12 +4,14 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [Frontend Mentor - Bento grid solution](#frontend-mentor---bento-grid-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
 
 ## Overview
 
@@ -21,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./screenshot.jpg)
+![screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/bento-grid-WXj8teN1v-)
+- [Live Site URL](https://romaletodiani.github.io/bento-grid/)
 
 ## My process
 
